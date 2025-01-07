@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+
+    <h1>Welcome to the Multimedia Webpage</h1>
+    
+    <!-- Audio Section -->
+    <section>
+        <h2>Listen to this Audio</h2>
+        <audio controls>
+            <source src="./media/audio.mp3" type="audio/mpeg">
+            <source src="./media/audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Watch this Video</h2>
+        <video controls poster="./media/image.png" style="width: 50%; height: 40vh;">
+            <source src="./media/video.mp4" type="video/mp4">
+            <source src="./media/video.webm" type="video/webm">
+            Your browser does not support the video element.
+        </video>
+    </section> <br><br><br>
+
+    <!-- Registration Form Section -->
+    <section>
+        <h2>User Registration Form</h2>
+
+        <div class="form-container">
+            <form action="#" method="POST" id="registration-form">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required maxlength="100" placeholder="Enter your full name">
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Enter your password (min. 8 characters)">
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required min="18" placeholder="Enter your age (18 or older)">
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group terms">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the <a href="#">Terms and Conditions</a>.
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+   
+
+</body>
+</html>
